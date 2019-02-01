@@ -22,7 +22,7 @@ Name:		golang-%{provider}-%{project}-%{repo}
 # Version and release information will be automatically managed by CD
 # It will be kept in sync with OCP builds.
 Version:	%{rpm_ver}
-Release:	2.git%{shortcommit}%{?dist}
+Release:	4.git%{shortcommit}%{?dist}
 Summary:	The Prometheus monitoring system and time series database
 License:	ASL 2.0
 URL:		https://prometheus.io/
@@ -90,6 +90,9 @@ install -D -p -m 0644 consoles/* %{buildroot}%{_datadir}/prometheus/consoles
 %{_datadir}/prometheus/consoles
 
 %changelog
+* Jan Thu 31 2019 Simon Pasquier <spasquie@redhat.com> - 2.3.2-4
+- Remove highlight code in the UI.
+
 * Thu Sep 27 2018 Simon Pasquier <spasquie@redhat.com> - 2.3.2-3
 - Remove stop command in systemd unit
 
