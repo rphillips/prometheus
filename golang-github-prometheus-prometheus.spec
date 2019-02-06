@@ -90,7 +90,7 @@ install -D -p -m 0644 consoles/* %{buildroot}%{_datadir}/prometheus/consoles
 %{_datadir}/prometheus/consoles
 
 %changelog
-* Jan Thu 31 2019 Simon Pasquier <spasquie@redhat.com> - 2.3.2-4
+* Thu Jan 31 2019 Simon Pasquier <spasquie@redhat.com> - 2.3.2-4
 - Remove highlight code in the UI.
 
 * Thu Sep 27 2018 Simon Pasquier <spasquie@redhat.com> - 2.3.2-3
